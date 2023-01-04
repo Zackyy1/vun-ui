@@ -1,4 +1,5 @@
 import React from 'react'
+import './Button.scss'
 
 export interface ButtonProps {
     onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
@@ -8,7 +9,7 @@ export interface ButtonProps {
 
 const Button = ({onClick, children}: ButtonProps) => {
   return (
-    <button onClick={(event) => onClick && onClick(event)}>
+    <button className='vbutton' onClick={(event) => onClick && onClick(event)}>
         {children}
     </button>
 
