@@ -1,7 +1,10 @@
 {
-  "name": "vun-ui",
+  "name": "@zackyy1/vun-ui",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Zackyy1"
+  },
   "version": "1.0.0",
-  "description": "",
+  "description": "Lightweight neumorphism UI components library for React",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
