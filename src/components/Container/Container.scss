@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.vcontainer {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 $grid-gutter;
+    min-width: 320px;
+
+}

@@ -1,3 +1,21 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .vbutton {
-    font-size: 16px;
+    padding: $grid-gutter $grid*4;
+    @include neumorph();
+    @include rem(font-size, 20);
+    @include rem(line-height, 24);
+    cursor: pointer;
+    font-weight: 700;
+
+    &:hover {
+        @include neumorph-inset();
+    }
+
+    &:active {
+        box-shadow: 0px 0px 0px $neu-dark,
+        0px 0px 0px $neu-light, inset 7px 7px 8px $neu-dark,
+        inset -7px -7px 8px $neu-light;
+    }
 }

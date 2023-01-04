@@ -1,0 +1,80 @@
+@import '../../styles/mixins';
+
+$thumb-size: 28px;
+
+.vslider {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    // background: black;
+    @include neumorph-inset;
+    height: 16px;
+    border-radius: 40px;
+}
+
+.vslider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: $thumb-size;
+    cursor: pointer;
+    width: $thumb-size;
+    border-radius: 50%;
+    // @include neumorph;
+    background: #eeeeee;
+    border: 1px solid #d0d0d0;
+    transition: box-shadow 0.02s ease;
+}
+
+.vslider:hover::-webkit-slider-thumb {
+    // box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1), -3px -3px 12px rgba(255, 255, 255, 0.5);
+    // @include neumorph-inset();
+}
+
+.vslider:active::-webkit-slider-thumb {
+    // box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1), -1px -1px 4px rgba(255, 255, 255, 0.5);
+    @include neumorph-inset();
+
+}
+
+.vslider::-moz-range-thumb {
+    height: $thumb-size;
+    cursor: pointer;
+    width: $thumb-size;
+    border-radius: 50%;
+    @include neumorph;
+    background: #eeeeee;
+    border: 1px solid #d0d0d0;
+    transition: box-shadow 0.02s ease;
+}
+
+.vslider:hover::-moz-range-thumb {
+    // box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1), -3px -3px 12px rgba(255, 255, 255, 0.5);
+    // @include neumorph-inset();
+
+}
+
+.vslider:active::-moz-range-thumb {
+    // box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1), -1px -1px 4px rgba(255, 255, 255, 0.5);
+    @include neumorph-inset();
+
+}
+
+.vslider::-ms-thumb {
+    height: $thumb-size;
+    cursor: pointer;
+    width: $thumb-size;
+    border-radius: 50%;
+    @include neumorph;
+    background: #eeeeee;
+    border: 1px solid #d0d0d0;
+    transition: box-shadow 0.02s ease;
+}
+
+// .vslider:hover::-ms-thumb {
+//     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1), -3px -3px 12px rgba(255, 255, 255, 0.5);
+// }
+
+// .vslider:active::-ms-thumb {
+//     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1), -1px -1px 4px rgba(255, 255, 255, 0.5);
+// }

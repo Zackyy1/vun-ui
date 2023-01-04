@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+
+@mixin rem($property, $pixels) {
+    #{$property}: #{$pixels / 16}rem;
+}
+
+@mixin neumorph {
+    border-radius: 32px;
+    background: $neu-main;
+    box-shadow: 7px 7px 16px $neu-dark,
+        -7px -7px 16px $neu-light, inset 0px 0px 0px $neu-dark,
+        inset 0px 0px 0px $neu-light;
+
+    transition: box-shadow 0.02s ease;
+}
+
+@mixin neumorph-inset {
+    box-shadow: 0px 0px 0px $neu-dark,
+        0px 0px 0px $neu-light, inset 7px 7px 16px $neu-dark,
+        inset -7px -7px 16px $neu-light;
+    transition: box-shadow 0.02s ease;
+
+}
+
+@mixin tablet {
+    @media (max-width: 1150px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}

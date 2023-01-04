@@ -1,0 +1,24 @@
+@import './variables';
+
+* {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
+}
+
+button {
+    background-color: $neu-main;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quicksand', sans-serif;
+}

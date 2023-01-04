@@ -1,0 +1,11 @@
+@import '../../styles/mixins';
+
+.vbodytext {
+    @include rem(font-size, 16);
+    @include rem(line-height, 24);
+    margin-top: 16px;
+
+
+
+
+}

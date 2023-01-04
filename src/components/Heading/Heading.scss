@@ -1,0 +1,31 @@
+@import '../../styles/mixins';
+
+.vheading {
+    h1 {
+        @include rem(font-size, 40);
+        @include rem(line-height, 48);
+        margin-top: 16px;
+        margin-bottom: 8px
+    }
+
+    h2 {
+        @include rem(font-size, 34);
+        @include rem(line-height, 42);
+        margin-top: 16px;
+        margin-bottom: 8px
+    }
+
+    h3 {
+        @include rem(font-size, 28);
+        @include rem(line-height, 36);
+        margin-top: 12px;
+        margin-bottom: 8px
+    }
+
+    h4 {
+        @include rem(font-size, 20);
+        @include rem(line-height, 28);
+        margin-top: 16px;
+        margin-bottom: 8px
+    }
+}

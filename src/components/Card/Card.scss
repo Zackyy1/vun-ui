@@ -1,0 +1,6 @@
+@import '../../styles/mixins';
+
+.vcard {
+    @include neumorph;
+    padding: 12px 24px;
+}
