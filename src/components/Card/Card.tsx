@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./Card.scss";
 
 export interface CardProps {
@@ -7,8 +7,12 @@ export interface CardProps {
   id?: string;
 }
 
-const Card = ({ children, className, id }: CardProps) => {
-  return <div className={`vcard ${className ? className : ''}`} id={id}>{children}</div>;
-};
+const Card = forwardRef(({ children, className, id }: CardProps, ref: React.Ref<HTMLDivElement>) => {
+  return (
+    <div ref={ref} className={`vcard ${className ? className : ""}`} id={id}>
+      {children}
+    </div>
+  );
+});
 
 export default Card;

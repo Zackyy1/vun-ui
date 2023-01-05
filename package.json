@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/Zackyy1"
   },
-  "version": "1.1.6",
+  "version": "1.1.8",
   "description": "Lightweight neumorphism UI components library for React",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
