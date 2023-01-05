@@ -3,12 +3,14 @@ import './Container.scss'
 
 export interface ContainerProps {
     children: React.ReactNode[] | React.ReactNode
+    className?: string
+    id?: string
 }
 
 
-const Container = ({children}: ContainerProps) => {
+const Container = ({children, className, id}: ContainerProps) => {
   return (
-    <div className='vcontainer'>
+    <div className={`vcontainer ${className ? className : ''}`} id={id}>
         {children}
     </div>
 

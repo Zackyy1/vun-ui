@@ -3,11 +3,13 @@ import './BodyText.scss'
 
 export interface BodyTextProps {
     children: React.ReactNode[] | React.ReactNode
+    className?: string
+    id?: string
 }
 
-const BodyText = ({children}: BodyTextProps) => {
+const BodyText = ({children, className, id}: BodyTextProps) => {
   return (
-    <p className='vbodytext'>{children}</p>
+    <p className={`vbodytext ${className ? className : ''}`} id={id}>{children}</p>
   )
 }
 

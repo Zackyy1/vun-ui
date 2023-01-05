@@ -3,11 +3,13 @@ import "./Code.scss";
 export interface CodeProps {
   children: React.ReactNode[] | React.ReactNode;
   inline?: boolean;
+  className?: string;
+  id?: string;
 }
 
-const Code = ({ children, inline }: CodeProps) => {
+const Code = ({ children, inline, className, id }: CodeProps) => {
   return (
-    <span className={`vcode ${inline ? "inline" : ""}`}>
+    <span className={`vcode ${inline ? "inline" : ""} ${className ? className : ''}`} id={id}>
       {inline ? (
         <code>{children}</code>
       ) : (

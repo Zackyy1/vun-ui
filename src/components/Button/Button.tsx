@@ -4,12 +4,14 @@ import './Button.scss'
 export interface ButtonProps {
     onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
     children: React.ReactNode[] | React.ReactNode
+    className?: string
+    id?: string
 }
 
 
-const Button = ({onClick, children}: ButtonProps) => {
+const Button = ({onClick, children, className, id}: ButtonProps) => {
   return (
-    <button className='vbutton' onClick={(event) => onClick && onClick(event)}>
+    <button className={`vbutton ${className ? className : ''}`} id={id} onClick={(event) => onClick && onClick(event)}>
         {children}
     </button>
 
