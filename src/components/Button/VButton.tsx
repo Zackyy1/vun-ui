@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, MutableRefObject } from "react";
 import "./Button.scss";
 
 export interface ButtonProps {
@@ -9,10 +9,10 @@ export interface ButtonProps {
   inset?: boolean;
 }
 
-const Button = forwardRef(
+const VButton = forwardRef(
   (
     { onClick, children, className, id, inset }: ButtonProps,
-    ref: React.Ref<HTMLButtonElement>
+    ref: React.Ref<any> | MutableRefObject<any>
   ) => {
     return (
       <button
@@ -29,4 +29,4 @@ const Button = forwardRef(
   }
 );
 
-export default Button;
+export default VButton;

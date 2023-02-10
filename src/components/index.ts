@@ -1,8 +1,9 @@
-export { default as Button } from "./Button";
-export { default as BodyText } from "./BodyText";
-export { default as Card } from "./Card";
-export { default as Code } from "./Code";
-export { default as Container } from "./Container";
-export { default as Heading } from "./Heading";
-export { default as Slider } from "./Slider";
-export { default as __entry} from './Entry'
+export { default as VButton } from "./Button";
+export { default as VBodyText } from "./BodyText";
+export { default as VCard } from "./Card";
+export { default as VCode } from "./Code";
+export { default as VContainer } from "./Container";
+export { default as VHeading } from "./Heading";
+export { default as VPill } from "./Pill";
+export { default as VSlider } from "./Slider";
+export { default as __Ventry} from './Entry'
